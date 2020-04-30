@@ -1,0 +1,227 @@
+/* custon properties */
+
+@font-face {
+    font-family: 'nexa_regular';
+    src: url('../fonts/nexaregular-webfont.woff2'), url('../fonts/nexaregular-webfont.woff');
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold-webfont.woff2') format('woff2'), url('../fonts/nexa_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'nexa_black_italicregular';
+    src: url('../fonts/nexa-black-italic-webfont.woff2') format('woff2'), url('../fonts/nexa-black-italic-webfont.woff') format('woff');
+}
+
+:root {
+    --main-font: 'Realway';
+    --font-size: 16px;
+    --line-height: 1.6;
+    --main-color: rgb(48, 130, 207);
+    --main-modal-color: rgb(19, 18, 18);
+    --main-segundario: rgb(233, 135, 38);
+    --bg-dark: rgb(19, 18, 18);
+    --bg-dark-secundario: rgb(0, 0, 0);
+    --bg-color: rgb(255, 255, 255);
+    --action-color: rgb(255, 255, 255);
+    --action-color-mision: rgb(248, 248, 248);
+    --ction-color-final: rgb(212, 98, 21);
+    --logo-height: 4rem;
+    --logo-spacing: .5rem;
+}
+
+
+/* reset styles */
+
+html {
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    line-height: var( --line-height);
+}
+
+body {
+    background-color: white;
+    font-family: 'nexa_regular';
+    font-weight: normal;
+}
+
+.nav-item:hover {
+    background-color: var(--main-color);
+    transition: all .3s ease;
+}
+
+
+/**************  My style ***********/
+
+
+
+.u-flowText {
+    font-size: 1.rem;
+}
+
+.container1 {
+    height: 100%;
+    width: 100%;
+}
+
+.HeroImage1 {
+    padding: 18%;
+    min-height: calc(100vh + var(--bg-dark));
+    background-size: auto;
+    background-image:url(https://i.blogs.es/67432b/infrared_triangulum_galaxy_-m33-/1366_2000.jpg);
+    
+    background-attachment:fixed;
+   
+}
+
+.HeroImage2 {
+    padding: 18%;
+    min-height: calc(100vh + var(--bg-dark));
+    background-size: auto;
+    background-image:url(https://i.pinimg.com/originals/f4/37/84/f43784f1602e7c8f86b6c7ab2f7daca9.jpg);
+    
+    background-attachment:fixed;
+    
+}
+
+.HeroImage3 {
+    padding: 18%;
+    min-height: calc(100vh + var(--bg-dark));
+    background-size: auto;
+    background-color:#cfc0c8;
+    
+    background-attachment:fixed;
+    
+}
+
+.u-fullScreen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+.u-flowText2 {
+    font-size: 2.25rem;
+    color: white;
+}
+
+.u-flowText2-text {
+    color: var(--bg-color);
+    font-size: 1.1em;
+    font-family: 'nexa_regular';
+    font-weight: normal;
+    font-style: normal
+}
+
+
+.HeroImage2 {
+    padding-top: 0%;
+}
+
+.container4 {
+    background-color: var(--main-segundario);
+    padding-top: 7%;
+}
+
+.fondo-mision {
+    background-color: white;
+}
+
+.HeroImage4 {
+    padding: 18%;
+    min-height: calc(100vh + var(--bg-dark));
+    background-size: auto;
+    background-image:url(https://i.pinimg.com/originals/f4/37/84/f43784f1602e7c8f86b6c7ab2f7daca9.jpg);
+    
+    background-attachment:fixed;
+}
+
+
+
+.card-title {
+    font-family: 'nexa_boldregular';
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -40px;
+    background: #be4913;
+    padding: 6px;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+}
+
+.t1 {
+    font-size: 3em;
+}
+
+.p2 {
+    font-size: 2em;
+}
+
+.t3 {
+    font-size: 2.5em;
+    font-family: 'nexa_boldregular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.t4 {
+    color: var(--bg-color);
+    font-family: 'nexa_black_italicregular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**************  Media queris small ***********/
+
+@media(min-width: 576px) {}
+
+
+/**************  Media Queris Medium ***********/
+
+@media(min-width: 768px) {
+    .valores-container {
+        height: 100%;
+    }
+    .valores-container .card {
+        height: 100%;
+    }
+    .valores-container .box-mision1 {
+        height: 80%;
+    }
+}
+
+
+/**************   Media Queris Large ***********/
+
+@media(min-width: 992px) {
+    .nav-item:hover {
+        background-color: transparent;
+    }
+}
+
+
+/**************  Media Queris Estralarge  ***********/
+
+@media(min-width: 1200px) {}
+
+@media(max-width: 767px) {
+    #seguridad .img-responsive {
+        max-width: 450px;
+    }
+    .u-flowText {
+        font-size: 1rem;
+    }
+    .t1 {
+        font-size: 2em;
+    }
+}
